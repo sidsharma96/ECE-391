@@ -1,0 +1,23 @@
+make -C /home/user/build M=/workdir/mp2_ssharm36/module modules
+make[1]: Entering directory `/home/user/build'
+make -C /workdirmain/ece391/ssharm36/source/linux-2.6.22.5 O=/home/user/build modules
+  CC [M]  /workdir/mp2_ssharm36/module/tuxctl-ioctl.o
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c: In function ‘tuxctl_handle_packet’:
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c:68: error: label at end of compound statement
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c: In function ‘tuxctl_ioctl’:
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c:93: warning: ISO C90 forbids mixed declarations and code
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c: In function ‘tux_init’:
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c:128: warning: ISO C90 forbids mixed declarations and code
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c: In function ‘tux_set_led’:
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c:155: warning: ISO C90 forbids mixed declarations and code
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c: In function ‘changestate’:
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c:211: warning: ISO C90 forbids mixed declarations and code
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c: In function ‘tux_buttons’:
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c:244: warning: unused variable ‘flags’
+/workdir/mp2_ssharm36/module/tuxctl-ioctl.c:273:2: warning: no newline at end of file
+make[4]: *** [/workdir/mp2_ssharm36/module/tuxctl-ioctl.o] Error 1
+make[3]: *** [_module_/workdir/mp2_ssharm36/module] Error 2
+make[2]: *** [modules] Error 2
+make[1]: *** [modules] Error 2
+make[1]: Leaving directory `/home/user/build'
+make: *** [all] Error 2
